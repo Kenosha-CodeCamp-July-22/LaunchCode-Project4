@@ -1,8 +1,96 @@
 <!DOCTYPE html>
-<html>
-   <head>
-   </head>
-   <body>
-      <!-- Write your HTML in this file! -->
-   </body>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="styles.css">
+   <script src="assignment.js"></script>
+   <title>My Hobbies</title>
+</head>
+
+<body>
+   <section class="nav-bar">
+      <div class="container">
+         <div class="nav">
+            <a class="logo" href="index.html">Force <span>Fitness</span></a>
+            <nav>
+               <ul class="nav-list">
+                  <li id="home-page">Home</li>
+                  <li id ="workout-page">Workouts</li>
+                  <li id="about-page">About me</li>
+                  <li id="contact-page">Contact</li>
+               </ul>
+            </nav>
+         </div>
+         <div class="main-page">
+            <h1>Force Fitness</h1>
+            <p>The place where your body goals comes to reality</p>
+         </div>
+      </div>
+   </section>
+
+   <section class="workouts-section">
+      <div class="container">
+         <h2> My Favorite Workouts</h2>
+         
+         <div class ="images-list">
+         <img src="images/Hitt.png">
+         <img src="images/lower-body.png">
+         <img src="images/upper-body.png">
+         </div>
+
+            <ul class="workout-list">
+               <li>HITT</li>
+               <li>Lower Body</li>
+               <li>Upper Body</li>
+            </ul>
+      </div>
+   </section>
+
+   <section class="workouts-importance">
+      <div class="container">
+         <h2>Importance of Workouts</h2>
+         <ul class="description-list">
+            <li>HITT<p>Burning calories, losing weight, help you lower blood pressure and blood sugar, while improving oxygen and blood flow. HIIT may also benefit brain health by improving mental health and memory.</p></li>
+            <li>Lower Body <p> Rooting your lower body into the ground helps to create resistance that travels upward into your core and upper body. You utilize lower-body strength to do all types of movements, including upper-body movements such as throwing, batting, or reaching overhead.</p></li>
+            <li>Upper Body <p>Upper body workouts strengthen our shoulders and back, helping us to have good posture. Muscle tissue can burn calories faster than fat. Upper body exercise contributes to muscle development, which contributes to our efforts to lose weight. Better body balance and strength is achieved through upper body fitness.</p></li>
+         </ul>
+      </div>
+   </section>
+
+   <section class="About-Me">
+      <div class="container">
+         <main class="main-me">
+            <h2>ABOUT ME</h2>
+            <img src="images/about-me-pic.png" alt="About me">
+            <article>
+               For me, fitness was never realllllyy about looking better or even helping other people (though I seriously love helping others, and looking as good as humanly possible), it was always more about working toward something that had no finish line. It was about the journey. About the love of “the game”. About saying no matter what, all that matters is you give your best on every rep.
+               Or at a higher level, that you give your best at this one shot called life.
+            </article>
+         </main>
+      </div>
+   </section>
+
+   <section contact-info>
+      <div class="container">
+         <div class="contact-form">
+            <h2>Contact</h2>
+               <form action="" class="form">
+                  <label for="name">Name</label>
+                  <input type="text" id = "name" name = "name">
+
+                  <label for="message">Message</label>
+                  <textarea name="message" id="message" cols="30" rows="10" placeholder="Send me a message"></textarea>
+
+                  <input type="submit" class="send-message" value="Send Message">
+               </form>
+               <footer>CopyRight &copy Blessing U... 2022</footer>
+         </div>
+   </section>
+</body>
+
 </html>
