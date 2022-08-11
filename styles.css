@@ -1,1 +1,290 @@
-/* Write your CSS here! */
+:root{
+    --primary-color: #F1AC88FF;
+    --secondary-color: #FC766AFF;
+    --other-color: rgba(120, 57, 55, 0.519);
+    --border-radius: 8em;
+}
+
+body{
+    background-color: var(--primary-color);
+    color: rgb(76, 74, 74);
+    margin: 0;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+/* NAV-BAR SECTION */
+
+/* ----DIV CLASS NAV--- */
+
+.nav a{
+    text-decoration: none;
+    color: var(--other-color);
+    font-size: 3em;
+    font-weight: bolder;
+    margin: 0.5em;
+    margin-top: 10em;
+}
+
+span{
+    color: var(--secondary-color);
+}
+
+nav{
+    display: flex;
+    padding: 2% 4% 6%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav-list{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-list li{
+    font-size: 1.5em;
+    list-style: none;
+    display: inline-block;
+    padding: 8px 30px;
+    position: relative;
+    top: -3.5em;
+    cursor: pointer;
+    transition: 1s;
+}
+.nav-list li:hover{
+    font-weight: bolder;
+    background-color: var(--secondary-color);
+    border-radius: 5em;
+
+}
+
+/* ---DIV CLASS MAIN_PAGE--- */
+
+.main-page{
+    text-align: center;
+    margin-top:-5em;
+    padding-bottom: 15.5em;
+}
+
+.main-page h1{
+    text-shadow:  -1px 5px var(--secondary-color);
+    font-size: 5em;
+}
+
+.main-page p{
+    color: rgb(76, 74, 74);
+    font-size: 2em;
+    border-radius: 2em;
+    background-color: rgba(120, 57, 55, 0.519);
+    display: inline-block;
+    padding: 1em;
+}
+
+
+/* WORKOUT SECTION */
+
+.workouts-section{
+    color: rgb(76, 74, 74);
+    background-color: rgba(120, 57, 55, 0.527);
+    text-align: center;
+    border-radius: 8em;
+    border-style:ridge;
+    border-color: var(--primary-color);
+    height: 55em;
+}
+
+.workouts-section h2{
+    font-size: 3em;
+    text-decoration: overline;
+    text-decoration-color: var(--secondary-color);
+}
+
+.images-list{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    padding-top: 3em;
+}
+
+.images-list img{
+    width: 25em;
+    height: 25em;
+    border-radius: 5%;
+    transition: 1s;
+}
+
+.workout-list{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.workout-list li{
+    list-style: none;
+    font-size: 1.5em;
+    justify-self: center;
+    font-weight: bolder;
+    border-style:solid;
+    border-radius: 20px;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    padding: 0.5%;
+    transition: 1s;
+}
+
+.images-list img:hover{
+    border-radius: 50%;
+    transition: 1s ease-out;
+    cursor: pointer;
+}
+
+.workout-list li:hover{
+    background-color: rgb(212, 99, 88);
+    font-size: 2em;
+    transition: 1s ease;
+}
+
+/* WORKOUT_IMPORTANCE SECTION */
+
+.workouts-importance{
+    background-color: var(--other-color);
+    text-align: center;
+    border-radius: 8em;
+    border-style:ridge;
+    border-color: var(--primary-color);
+    border-width: 1em;
+    height: 55em;
+    padding:2em;
+}
+
+.workouts-importance h2{
+    font-size: 3em;
+    text-decoration: overline;
+    text-decoration-color: var(--secondary-color);
+}
+
+.description-list li{
+    font-size: 2em;
+    list-style: none;
+}
+
+.description-list li p{
+    background-color: rgba(222, 128, 119, 0.61);
+    margin-inline-start: 1.5em;
+    border-radius: 1em;
+    padding: 10px;
+    font-size: 30px;
+    width: 90%;
+}
+
+.description-list li:hover{
+    list-style:inside;
+    cursor:default;
+    transition: 0.5s;
+}
+
+/* ABOUT ME */
+
+.About-Me{
+    padding: 1em;
+    height: 40em;
+}
+
+.main-me h2{
+    margin-left: 13em;
+    font-size: 3em;
+    text-decoration: overline;
+    text-decoration-color: var(--secondary-color);
+}
+
+.main-me img{
+    height: 30em;
+    width: 30em;
+    float: right;
+    padding: -2em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-radius: 40%;
+}
+
+.main-me article{
+    display:flex;
+    padding: 1em;
+    margin: 1em;
+    font-size: 25px;
+    text-transform: uppercase;
+    border-style:dashed ;
+    border-color: var(--primary-color);
+    border-radius: 20px;
+    background-color: var(--secondary-color);
+}
+
+/* CONTACT-INFO SECTION */
+
+.contact-form{
+    height: 40em;
+    border-width: 2em;
+    background-color: rgba(81, 37, 36, 0.519);
+    border-style: ridge;
+    border-radius: var(--border-radius);
+    border-color: var(--primary-color);
+}
+
+.contact-form h2{
+    margin-left: 13em;
+    font-size: 3em;
+    text-decoration: overline;
+    text-decoration-color: var(--secondary-color);
+}
+
+.form{
+    justify-content: space-around;
+    margin-left: 36.5em;
+    padding: 0em;
+    padding-bottom: 1em;
+}
+
+.form #name{
+    display: flex;
+    padding: 2em;
+    padding-right: 7em;
+    padding-bottom: -3em;
+    border-color: var(--other-color);
+    background-color: bisque;
+    border-radius: 1em;
+}
+
+.form #message{
+    display: flex;
+    border-color: var(--other-color);
+    background-color: bisque;
+    border-radius: 1em;
+
+}
+
+.form label{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.send-message{
+    margin-top: 1em;
+    margin-left: 5em;
+    border-radius: 2em;
+    border-color: rgba(81, 37, 36, 0.519);
+    padding: 1em;
+    background-color: var(--secondary-color);
+}
+.send-message:hover{
+    background-color: var(--primary-color);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.contact-form footer{
+    font-size: larger;
+    font-weight: 600;
+    margin-left: 4em;
+    padding-top:5em;
+}
